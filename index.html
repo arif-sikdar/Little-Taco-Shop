@@ -11,6 +11,7 @@
         <link rel="icon" href="img/favicon.ico" />
         <title>The Little Taco Shop</title>
         <link rel="stylesheet" href="css/style.css" />
+        <script src="js/script.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -39,90 +40,64 @@
             </figure>
         </section>
 
-        <main>
-            <article id="about-lts">
-                <h2>About LTS</h2>
-                <p>
-                    <abbr title="Little Taco Shop">LTS</abbr> was founded in 2022. Our shop was
-                    built from a <strong>love of tacos</strong> 🌮🌮🌮. We hope our shops adds a
-                    unique and interesting place to our little town.
-                </p>
-                <aside>
-                    <h3>Taco Trivia</h3>
-                    <details>
-                        <summary>When did Tacos first appear in the United States?</summary>
-                        <p>
-                            Jeffrey M. Pilcher, taco historian and professor of history at the
-                            University of Minnesota, says the earliest mention of tacos in the
-                            United States are in a newspaper form 1905.
-                            <br />
-                            &lpar;Source:
-                            <em
-                                ><a href="https://www.smithsonianmag.com/"
-                                    >Smithsonian Magazine&rpar;</a
-                                ></em
-                            >
-                        </p>
-                    </details>
-                </aside>
-            </article>
-
-            <hr />
-
-            <article id="our-menu">
-                <h2>Our Menu</h2>
-                <table>
-                    <caption>
+        <main class="main">
+            <article id="our-menu" class="main__article menu">
+                <h2 class="menu__h2">Our Menu</h2>
+                <table class="menu__container">
+                    <caption class="offscreen">
                         Our Tacos
                     </caption>
                     <thead>
                         <tr>
-                            <th scope="col">Tacos</th>
-                            <th scope="col"><abbr title="Quantity">Qty</abbr></th>
-                            <th scope="col">Price</th>
+                            <th class="menu__header" scope="col">Tacos</th>
+                            <th class="menu__header" scope="col">Quantity</th>
+                            <th class="menu__header" scope="col">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th rowspan="3" scope="row">Crunchy</th>
-                            <td>1</td>
-                            <td>&dollar;1.50</td>
+                            <th class="menu__item menu__cr" rowspan="3" scope="row">Crunchy</th>
+                            <td class="menu__item">1</td>
+                            <td class="menu__item">&dollar;1.50</td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>&dollar;2.50</td>
+                            <td class="menu__item">2</td>
+                            <td class="menu__item">&dollar;2.50</td>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>&dollar;3.25</td>
+                            <td class="menu__item">3</td>
+                            <td class="menu__item">&dollar;3.25</td>
                         </tr>
                         <tr>
-                            <th rowspan="3" scope="row">Soft</th>
-                            <td>1</td>
-                            <td>&dollar;2.00</td>
+                            <th class="menu__item menu__sf" rowspan="3" scope="row">Soft</th>
+                            <td class="menu__item">1</td>
+                            <td class="menu__item">&dollar;2.00</td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>&dollar;3.50</td>
+                            <td class="menu__item">2</td>
+                            <td class="menu__item">&dollar;3.50</td>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>&dollar;4.50</td>
+                            <td class="menu__item">3</td>
+                            <td class="menu__item">&dollar;4.50</td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="3">Chips &amp; Salsa &dollar;2</td>
+                            <td class="menu__item menu__cs" colspan="3">
+                                Chips &amp; Salsa &dollar;2
+                            </td>
                         </tr>
                     </tfoot>
                 </table>
+                <p class="center"><a href="#">Back to Top</a></p>
             </article>
         </main>
-        <footer>
-            <br />
-            <p><a href="#">Back to Top</a></p>
-            <hr />
-            <p>Copyright &copy; The Little Taco Shop</p>
+        <footer class="footer">
+            <p>
+                <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+                <span class="nowrap">Little Taco Shop</span>
+            </p>
         </footer>
     </body>
 </html>
